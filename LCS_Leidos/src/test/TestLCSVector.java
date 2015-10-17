@@ -24,7 +24,7 @@ public class TestLCSVector{
 	@Before
 	public void initialize(){
 		arr1 = new int[]{2,1,3};
-		arr2 = new int[]{};
+		arr2 = new int[]{5,6,7};
 		arr3 = new int[]{3,2,1,2};
 		arr4 = new int[]{0};
 		vect1 = copyFromArray(arr1);
