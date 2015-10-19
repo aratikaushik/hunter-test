@@ -1,37 +1,35 @@
 package test;
 
-import org.junit.*;
-
 import src.LCS;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-public class TestLCSString{
-	
+public class TestLCSString {
+
 	@Test
-	public void test1(){
+	public void test1() {
 		assertEquals("bc", LCS.lcs("abc", "bdcp"));
 	}
-	
+
 	@Test
-	public void test2(){
-		assertEquals("", LCS.lcs("", "bdcp"));
+	public void test2() {
+		assertEquals("dc", LCS.lcs("dcab", "bdcp"));
 	}
-	
+
 	@Test
-	public void test3(){
-		assertEquals("", LCS.lcs("abc", ""));
+	public void test3() {
+		assertEquals("", LCS.lcs("abc", "efd"));
 	}
-	
+
 	@Test
-	public void test4(){
+	public void test4() {
 		assertEquals("abc", LCS.lcs("abc", "badbhccp"));
 	}
-	
+
 	@Test
-	public void test5(){
+	public void test5() {
 		assertEquals("", LCS.lcs("abc", "xyz"));
 	}
-	
-	
+
 }
